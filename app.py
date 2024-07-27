@@ -9,9 +9,9 @@ lemma = WordNetLemmatizer()
 
 from nltk.tokenize import word_tokenize
 
-le = pickle.load(open('./../labelEncoder.pkl','rb'))
-vectoriser = pickle.load(open('./../vectoriser.pkl','rb'))
-classifier = pickle.load(open('./../classifier.pkl','rb'))
+le = pickle.load(open('labelEncoder.pkl','rb'))
+classifier = pickle.load(open('classifier.pkl','rb'))
+vectoriser = pickle.load(open('vectoriser.pkl','rb'))
 
 
 app = Flask(__name__)
