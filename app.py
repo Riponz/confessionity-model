@@ -15,7 +15,7 @@ vectoriser = pickle.load(open('vectoriser.pkl','rb'))
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 import string
 def remove_punctuation(text):
